@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+// read https://www.nicknish.co/blog/cypress-targeting-elements-inside-iframes and https://github.com/cypress-io/cypress/issues/136 for more on iframes
 describe('IFrames testing in Cypress', () => {
   const iframe = '#mce_0_ifr';
 
