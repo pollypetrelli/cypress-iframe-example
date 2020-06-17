@@ -13,6 +13,7 @@ describe('IFrames testing in Cypress', () => {
     cy.switchToIframe(iframe)
       .clear()
       .type('hello')
+    //use command a to select text. with cypress we can invoke the keyboard commands
       .type('{command}a')
       .should('have.text', 'hello');
     cy.get('@boldIcon').click();
